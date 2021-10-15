@@ -16,6 +16,7 @@ module "solution" {
   diagnostic_storage_accounts           = var.diagnostic_storage_accounts
   diagnostics_definition                = var.diagnostics_definition
   diagnostics_destinations              = var.diagnostics_destinations
+  event_grid_topic                      = var.event_grid_topics
   event_hub_auth_rules                  = var.event_hub_auth_rules
   event_hub_consumer_groups             = var.event_hub_consumer_groups
   event_hub_namespace_auth_rules        = var.event_hub_namespace_auth_rules

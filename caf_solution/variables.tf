@@ -240,3 +240,6 @@ variable "propagate_launchpad_identities" {
 variable "random_strings" {
   default = {}
 }
+variable "event_grid_topics" {
+  default = {}
+}
