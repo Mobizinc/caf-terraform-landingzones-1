@@ -240,3 +240,7 @@ variable "propagate_launchpad_identities" {
 variable "random_strings" {
   default = {}
 }
+variable "security_center_assessment_policy" {
+  default     = {}
+  description = "Azure Security Center assessment Policy"
+}
