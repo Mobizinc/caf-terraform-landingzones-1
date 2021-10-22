@@ -20,3 +20,7 @@ variable "lighthouse_definitions" {
 variable "security" {
   default = {}
 }
+variable "security_center" {
+  default     = {}
+  description = "Azure Security Center"
+}
