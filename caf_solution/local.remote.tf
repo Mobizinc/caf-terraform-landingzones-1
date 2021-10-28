@@ -112,6 +112,9 @@ locals {
     notification_hub = {
       for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].notification_hub, {}))
     }
+    notification_hub_authorization_rule = {
+      for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].notification_hub_authorization_rule, {}))
+    }
     mssql_databases = {
       for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].mssql_databases, {}))
     }

@@ -7,3 +7,6 @@ variable "notification_hub" {
 variable "messaging" {
   default = {}
 }
+variable "notification_hub_authorization_rule" {
+  default = {}
+}
