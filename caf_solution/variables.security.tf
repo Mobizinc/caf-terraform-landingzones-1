@@ -20,7 +20,19 @@ variable "lighthouse_definitions" {
 variable "security" {
   default = {}
 }
-variable "security_center" {
+variable "security_center_policy" {
   default     = {}
-  description = "Azure Security Center"
+  description = "Azure Security Center Policy"
+}
+variable "security_center_settings" {
+  default     = {}
+  description = "Azure Security Center Settings"
+}
+variable "security_center_subscription_pricing" {
+  default     = {}
+  description = "Azure Security Center Subscription Pricing"
+}
+variable "security_center_automation" {
+  default     = {}
+  description = "Azure Security Center Automation"
 }
