@@ -36,3 +36,7 @@ variable "security_center_automation" {
   default     = {}
   description = "Azure Security Center Automation"
 }
+variable "security_center_assessment" {
+  default     = {}
+  description = "Azure Security Center Assessment"
+}

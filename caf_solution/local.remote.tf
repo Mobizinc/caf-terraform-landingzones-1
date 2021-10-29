@@ -83,6 +83,9 @@ locals {
     event_hub_auth_rules = {
       for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].event_hub_auth_rules, {}))
     }
+    event_hub_namespace_auth_rules = {
+      for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].event_hub_namespace_auth_rules, {}))
+    }
     front_door_waf_policies = {
       for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].front_door_waf_policies, {}))
     }
