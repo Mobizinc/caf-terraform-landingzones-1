@@ -14,6 +14,7 @@ locals {
       security_center_settings             = var.security_center_settings
       security_center_automation           = var.security_center_automation
       security_center_assessment           = var.security_center_assessment
+      security_center_workspace            = var.security_center_workspace
     }
   )
 }
