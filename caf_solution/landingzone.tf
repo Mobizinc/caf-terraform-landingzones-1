@@ -3,7 +3,7 @@ module "solution" {
   version = "~>5.4.2"
 
   # source = "git::https://github.com/aztfmod/terraform-azurerm-caf.git?ref=master"
-  # source = "../../aztfmod"
+  # source = "../caf_module"
 
   azuread                               = local.azuread
   cloud                                 = local.cloud
@@ -47,6 +47,7 @@ module "solution" {
   tfstates                              = var.tfstates
   user_type                             = var.user_type
   webapp                                = local.webapp
+  communication_services                = var.communication_services
 
   diagnostics = {
     diagnostics_definition          = local.diagnostics.diagnostics_definition
