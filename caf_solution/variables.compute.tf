@@ -1,6 +1,9 @@
 variable "aks_clusters" {
   default = {}
 }
+variable "aks_proxy" {
+  default = {}
+}
 variable "availability_sets" {
   default = {}
 }
