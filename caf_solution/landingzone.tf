@@ -31,7 +31,7 @@ module "solution" {
   logged_user_objectId                  = var.logged_user_objectId
   logic_app                             = var.logic_app
   managed_identities                    = var.managed_identities
-  marketplace_agreement                 = var.marketplace_agreement
+  marketplace_agreements                = var.marketplace_agreements
   networking                            = local.networking
   random_strings                        = var.random_strings
   remote_objects                        = local.remote

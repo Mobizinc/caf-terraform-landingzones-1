@@ -240,7 +240,7 @@ variable "propagate_launchpad_identities" {
 variable "random_strings" {
   default = {}
 }
-variable "marketplace_agreement" {
-  description = "Marketplace Agreement"
+variable "marketplace_agreements" {
+  description = "Marketplace Agreements"
   default = {}
 }
