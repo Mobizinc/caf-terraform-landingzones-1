@@ -25,6 +25,7 @@ locals {
       mysql_databases                    = var.mysql_databases
       mysql_servers                      = var.mysql_servers
       postgresql_servers                 = var.postgresql_servers
+      postgresql_flexible_server         = var.postgresql_flexible_server
       synapse_workspaces                 = var.synapse_workspaces
     }
   )
