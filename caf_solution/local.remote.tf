@@ -147,6 +147,7 @@ locals {
     }
     postgresql_flexible_server = {
       for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].postgresql_flexible_server, {}))
+    } 
     private_dns = {
       for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].private_dns, {}))
     }
