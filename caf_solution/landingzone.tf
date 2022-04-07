@@ -1,10 +1,10 @@
 module "solution" {
-  source  = "aztfmod/caf/azurerm"
-  version = "5.5.5"
+  # source  = "aztfmod/caf/azurerm"
+  # version = "5.5.5"
 
   # during dev cycles for the module, you can pick dev branches from GitHub, or from a local fork
   # source = "git::https://github.com/aztfmod/terraform-azurerm-caf.git?ref=main"
-  # source = "../../aztfmod"
+  source = "../aztfmod"
 
   providers = {
     azurerm.vhub = azurerm.vhub
@@ -38,6 +38,7 @@ module "solution" {
   logged_user_objectId                  = var.logged_user_objectId
   logic_app                             = var.logic_app
   managed_identities                    = var.managed_identities
+  management_groups                     = var.management_groups
   messaging                             = local.messaging
   networking                            = local.networking
   random_strings                        = var.random_strings
