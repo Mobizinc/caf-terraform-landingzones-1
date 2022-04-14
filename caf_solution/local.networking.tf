@@ -40,6 +40,11 @@ locals {
       private_endpoints                                       = var.private_endpoints
       public_ip_addresses                                     = var.public_ip_addresses
       route_tables                                            = var.route_tables
+      traffic_manager_profile                                 = var.traffic_manager_profile
+      traffic_manager_nested_endpoint                         = var.traffic_manager_nested_endpoint
+      traffic_manager_endpoint                                = var.traffic_manager_endpoint
+      traffic_manager_external_endpoint                       = var.traffic_manager_external_endpoint
+      traffic_manager_azure_endpoint                          = var.traffic_manager_azure_endpoint
       vhub_peerings                                           = var.vhub_peerings
       virtual_hub_connections                                 = var.virtual_hub_connections
       virtual_hub_er_gateway_connections                      = var.virtual_hub_er_gateway_connections
