@@ -208,6 +208,21 @@ locals {
     synapse_workspaces = {
       for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].synapse_workspaces, {}))
     }
+    traffic_manager_profile = {
+      for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].traffic_manager_profile, {}))
+    }
+    traffic_manager_nested_endpoint = {
+      for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].traffic_manager_nested_endpoint, {}))
+    }
+    traffic_manager_endpoint = {
+      for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].traffic_manager_endpoint, {}))
+    }
+    traffic_manager_external_endpoint = {
+      for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].traffic_manager_external_endpoint, {}))
+    }
+    traffic_manager_azure_endpoint = {
+      for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].traffic_manager_azure_endpoint, {}))
+    }  
     virtual_hub_connections = {
       for key, value in try(var.landingzone.tfstates, {}) : key => merge(try(data.terraform_remote_state.remote[key].outputs.objects[key].virtual_hub_connections, {}))
     }
